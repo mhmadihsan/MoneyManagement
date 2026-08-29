@@ -10,15 +10,15 @@
             <!-- Filter Form -->
             <form action="{{ route('transaksi.index') }}" method="GET" class="mb-5 bg-light p-4 rounded-3 border">
                 <div class="row align-items-end g-3">
-                    <div class="col-md-3">
+                    <div class="col-lg-2 col-md-6">
                         <label for="start_date" class="form-label small fw-bold text-secondary">Mulai Tanggal</label>
                         <input type="date" name="start_date" id="start_date" class="form-control" value="{{ request('start_date') }}">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-2 col-md-6">
                         <label for="end_date" class="form-label small fw-bold text-secondary">Sampai Tanggal</label>
                         <input type="date" name="end_date" id="end_date" class="form-control" value="{{ request('end_date') }}">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-2 col-md-6">
                         <label for="tipe" class="form-label small fw-bold text-secondary">Tipe Transaksi</label>
                         <select name="tipe" id="tipe" class="form-select">
                             <option value="">Semua Tipe</option>
@@ -26,7 +26,18 @@
                             <option value="keluar" {{ request('tipe') == 'keluar' ? 'selected' : '' }}>Uang Keluar</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6">
+                        <label for="kategori_id" class="form-label small fw-bold text-secondary">Master Kategori</label>
+                        <select name="kategori_id" id="kategori_id" class="form-select">
+                            <option value="">Semua Kategori</option>
+                            @foreach($kategoris as $kategori)
+                                <option value="{{ $kategori->id }}" {{ (string) request('kategori_id') === (string) $kategori->id ? 'selected' : '' }}>
+                                    {{ $kategori->nama }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
                         <div class="d-flex gap-2">
                             <button type="submit" class="btn btn-primary w-100 fw-bold">
                                 <i class="bi bi-filter me-1"></i>Filter

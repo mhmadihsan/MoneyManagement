@@ -19,6 +19,10 @@ class TransaksiKeuanganController extends Controller
             $query->where('tipe', $request->tipe);
         }
 
+        if ($request->filled('kategori_id')) {
+            $query->where('kategori_id', $request->integer('kategori_id'));
+        }
+
         if ($request->filled('start_date')) {
             $query->whereDate('tanggal', '>=', $request->start_date);
         }
@@ -28,7 +32,9 @@ class TransaksiKeuanganController extends Controller
         }
 
         $transaksis = $query->orderBy('tanggal', 'desc')->get();
-        return view('transaksi.index', compact('transaksis'));
+        $kategoris = Kategori::orderBy('nama')->get();
+
+        return view('transaksi.index', compact('transaksis', 'kategoris'));
     }
 
     /**
@@ -36,8 +42,12 @@ class TransaksiKeuanganController extends Controller
      */
     public function create()
     {
-        $kategoris = Kategori::all();
-        return view('transaksi.create', compact('kategoris'));
+        $kategoris = Kategori::orderBy('nama')->get();
+        $totalMasuk = TransaksiKeuangan::where('tipe', 'masuk')->sum('nominal');
+        $totalKeluar = TransaksiKeuangan::where('tipe', 'keluar')->sum('nominal');
+        $saldoAkhir = $totalMasuk - $totalKeluar;
+
+        return view('transaksi.create', compact('kategoris', 'saldoAkhir'));
     }
 
     /**

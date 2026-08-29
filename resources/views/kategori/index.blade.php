@@ -37,13 +37,46 @@
                                 <td class="px-4 py-3">{{ $loop->iteration }}</td>
                                 <td class="px-4 py-3 fw-medium">{{ $k->nama }}</td>
                                 <td class="px-4 py-3 text-center">
-                                    <form action="{{ route('kategori.destroy', $k) }}" method="POST" onsubmit="return confirm('Hapus kategori ini?')">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-outline-danger px-3">
-                                            <i class="bi bi-trash me-1"></i>Hapus
+                                    <div class="d-flex justify-content-center gap-2">
+                                        <button type="button" class="btn btn-sm btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#editKategoriModal{{ $k->id }}">
+                                            <i class="bi bi-pencil-square me-1"></i>Edit
                                         </button>
-                                    </form>
+
+                                        <form action="{{ route('kategori.destroy', $k) }}" method="POST" onsubmit="return confirm('Hapus kategori ini?')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-sm btn-outline-danger px-3">
+                                                <i class="bi bi-trash me-1"></i>Hapus
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                    <div class="modal fade text-start" id="editKategoriModal{{ $k->id }}" tabindex="-1" aria-labelledby="editKategoriModalLabel{{ $k->id }}" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <form action="{{ route('kategori.update', $k) }}" method="POST">
+                                                    @csrf
+                                                    @method('PUT')
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="editKategoriModalLabel{{ $k->id }}">
+                                                            <i class="bi bi-pencil-square me-2"></i>Edit Kategori
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <label for="nama-kategori-{{ $k->id }}" class="form-label fw-semibold">Nama Kategori</label>
+                                                        <input type="text" id="nama-kategori-{{ $k->id }}" name="nama" class="form-control" value="{{ $k->nama }}" maxlength="255" required>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                                        <button type="submit" class="btn btn-primary">
+                                                            <i class="bi bi-check-lg me-1"></i>Simpan Perubahan
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                         @empty
