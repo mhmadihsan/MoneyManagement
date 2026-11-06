@@ -1,0 +1,202 @@
+{
+  "description": "Local frontend assets. Source URLs are download provenance only; the application loads files from this directory.",
+  "versions": {
+    "bootstrap": "5.3.3",
+    "bootstrap-icons": "1.11.3",
+    "jquery": "3.7.1",
+    "select2": "4.1.0-rc.0",
+    "select2-bootstrap-5-theme": "1.3.0",
+    "datatables": "1.13.7",
+    "chart.js": "4.6.1",
+    "@fontsource/poppins": "5.3.0",
+    "@fontsource/figtree": "5.3.0"
+  },
+  "files": [
+    {
+      "path": "bootstrap/bootstrap.min.css",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
+      "sha256": "26db49828d6701fcfce37a96da6ec3f0ed481abae49c8c9969a575b064413cad",
+      "bytes": 232758
+    },
+    {
+      "path": "bootstrap/bootstrap.bundle.min.js",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "sha256": "073254afbfc06331b8b548b7fc0532b4ffe2cfdd588368dcc338e7abd50810e1",
+      "bytes": 80673
+    },
+    {
+      "path": "bootstrap/LICENSE",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/LICENSE",
+      "sha256": "8c14611ae41ac6fd543c13349f22188eb12c69b3e59105c5eca3925a8e4eca3e",
+      "bytes": 1093
+    },
+    {
+      "path": "bootstrap-icons/bootstrap-icons.min.css",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css",
+      "sha256": "f643d6fe7e679f9de3e16311600c5ef5cd6b098f7a3a8828fcc29255d2b33e62",
+      "bytes": 85875
+    },
+    {
+      "path": "bootstrap-icons/fonts/bootstrap-icons.woff2",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2",
+      "sha256": "476adf42b40325098fcfa8b36ab3e769186bb4f6ce6a249753e2e1a9c22bf99e",
+      "bytes": 130396
+    },
+    {
+      "path": "bootstrap-icons/fonts/bootstrap-icons.woff",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff",
+      "sha256": "bb1de989b83970f6f4e54de1cd974c5cba55b73582da5e1b225a6d0edf029483",
+      "bytes": 176032
+    },
+    {
+      "path": "bootstrap-icons/LICENSE",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/LICENSE",
+      "sha256": "0fb3e11bd57e896c5a512afd64864d28a37de45d19835016c87ca1ad19ead969",
+      "bytes": 1093
+    },
+    {
+      "path": "jquery/jquery.min.js",
+      "source": "https://code.jquery.com/jquery-3.7.1.min.js",
+      "sha256": "fc9a93dd241f6b045cbff0481cf4e1901becd0e12fb45166a8f17f95823f0b1a",
+      "bytes": 87533
+    },
+    {
+      "path": "jquery/LICENSE.txt",
+      "source": "https://cdn.jsdelivr.net/npm/jquery@3.7.1/LICENSE.txt",
+      "sha256": "d4db9ebe6f29f5168eac45ad713f055623ac5d0dcd5ba92da23d650ae012020d",
+      "bytes": 1097
+    },
+    {
+      "path": "select2/select2.min.css",
+      "source": "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css",
+      "sha256": "cda4a81c187015d95ed2c71f1841540b08203cdec5fa2a7d5d1825a3c2166f8c",
+      "bytes": 16264
+    },
+    {
+      "path": "select2/select2.min.js",
+      "source": "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js",
+      "sha256": "f7244fff610595b944f76bf3080d74e3af42b5dd234f8f079e698cc39ac966b0",
+      "bytes": 73163
+    },
+    {
+      "path": "select2/LICENSE.md",
+      "source": "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/LICENSE.md",
+      "sha256": "4ee0cbc51370afde358652a0f977972053729ed578b6a42f5e2a037d114f0b39",
+      "bytes": 1124
+    },
+    {
+      "path": "select2-bootstrap-5-theme/select2-bootstrap-5-theme.min.css",
+      "source": "https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css",
+      "sha256": "5cb35411fccf18705e4ad112d836cb514459ddeefddc169b970cc99588fa5b64",
+      "bytes": 31223
+    },
+    {
+      "path": "select2-bootstrap-5-theme/LICENSE",
+      "source": "https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/LICENSE",
+      "sha256": "ff05bce2bb5484379d090356cb39aa945ed7f0471993dd8a4bb4a8c71ec28c1e",
+      "bytes": 1113
+    },
+    {
+      "path": "datatables/dataTables.bootstrap5.min.css",
+      "source": "https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css",
+      "sha256": "f34c8a0861b8143557d6a3fb835fedfa8896c896b645af8da700ed8827d8b114",
+      "bytes": 12163
+    },
+    {
+      "path": "datatables/jquery.dataTables.min.js",
+      "source": "https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js",
+      "sha256": "ec42765021641e0f094cc8309d3f4f998afbd68683c008012ac11a4139842ee6",
+      "bytes": 87221
+    },
+    {
+      "path": "datatables/dataTables.bootstrap5.min.js",
+      "source": "https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js",
+      "sha256": "de25c7adf49de31cc8d58caba281748c6e0e5701a2480a14d7e59d6301306199",
+      "bytes": 2358
+    },
+    {
+      "path": "datatables/i18n/id.json",
+      "source": "https://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "sha256": "136059dd788e0be164f370518d0268aa961fbbcd498f67ea4d68a821898fc59c",
+      "bytes": 8196
+    },
+    {
+      "path": "datatables/License.txt",
+      "source": "https://cdn.jsdelivr.net/npm/datatables.net@1.13.7/License.txt",
+      "sha256": "62b5fdd54371b4f6bd07a60dbc78b38814f49a8028213f540dc2733cad605382",
+      "bytes": 1120
+    },
+    {
+      "path": "chartjs/chart.umd.js",
+      "source": "https://cdn.jsdelivr.net/npm/chart.js@4.6.1/dist/chart.umd.js",
+      "sha256": "fae96e55c6daa9ea7b3f60b6e6ea153904f510f6e00f59ed5ba3be21df231cd2",
+      "bytes": 210041
+    },
+    {
+      "path": "chartjs/LICENSE.md",
+      "source": "https://cdn.jsdelivr.net/npm/chart.js@4.6.1/LICENSE.md",
+      "sha256": "41a84aa2caba645f966a18d9c2056b73e6d3a81d80bc0046bc0011a2634d4cce",
+      "bytes": 1093
+    },
+    {
+      "path": "fonts/poppins/LICENSE",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.3.0/LICENSE",
+      "sha256": "5c4a92c8f8ce0ab211f4c72889d82383c9644546115d9ba39a4f2d5b8f37014b",
+      "bytes": 6175
+    },
+    {
+      "path": "fonts/figtree/LICENSE",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/figtree@5.3.0/LICENSE",
+      "sha256": "ee23e6c84000126692e112ff067b456470493349f993ceaa8b4d3766dd6fad5d",
+      "bytes": 4498
+    },
+    {
+      "path": "fonts/poppins/poppins-latin-400-normal.woff2",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.3.0/files/poppins-latin-400-normal.woff2",
+      "sha256": "7d93459d86585bfcdbb7e0376056226adb25821ee54b96236fe2123e9560929f",
+      "bytes": 7884
+    },
+    {
+      "path": "fonts/poppins/poppins-latin-600-normal.woff2",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.3.0/files/poppins-latin-600-normal.woff2",
+      "sha256": "f4e80d9dfd374d02989b87a27b5ed4cb78fbb177c27f1478e9a8b0afb7513149",
+      "bytes": 8000
+    },
+    {
+      "path": "fonts/poppins/poppins-latin-700-normal.woff2",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.3.0/files/poppins-latin-700-normal.woff2",
+      "sha256": "9338e65fc077355c7a87ae0d64cc101e23b9bf8ad78ae65f0f319c857311b526",
+      "bytes": 7816
+    },
+    {
+      "path": "fonts/figtree/figtree-latin-400-normal.woff2",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/figtree@5.3.0/files/figtree-latin-400-normal.woff2",
+      "sha256": "8f98dd642986f1fa39c45b89665a57372897c235b36028e0e4a136e43dc5f8ab",
+      "bytes": 11384
+    },
+    {
+      "path": "fonts/figtree/figtree-latin-500-normal.woff2",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/figtree@5.3.0/files/figtree-latin-500-normal.woff2",
+      "sha256": "953a6a4294b1205a1b4d4b9e5529478e8c9e1c5a67a9aa24a551414cd85b6f51",
+      "bytes": 11432
+    },
+    {
+      "path": "fonts/figtree/figtree-latin-600-normal.woff2",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/figtree@5.3.0/files/figtree-latin-600-normal.woff2",
+      "sha256": "367d713287918784702563518f59239989da815c80d3c7337686b9816635a08b",
+      "bytes": 11544
+    },
+    {
+      "path": "fonts/figtree/figtree-latin-700-normal.woff2",
+      "source": "https://cdn.jsdelivr.net/npm/@fontsource/figtree@5.3.0/files/figtree-latin-700-normal.woff2",
+      "sha256": "7ec4f08d09f91d349917dd6592f6aaae66d8fe1bbd58fa24707961e79236616e",
+      "bytes": 11376
+    },
+    {
+      "path": "fonts/fonts.css",
+      "source": "Local @font-face declarations",
+      "sha256": "d51da82106be2d66408f285286c996a8191545a6a931aa946be835a75d8caa64",
+      "bytes": 1389
+    }
+  ]
+}

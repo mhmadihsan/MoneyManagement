@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-06T12:35:38.841Z",
+  "database": "/private/tmp/managementMoney-qa-u930RZ/database.sqlite",
+  "browser": "Google Chrome headless",
+  "offline": true,
+  "results": [
+    {
+      "name": "Beranda dan tautan login",
+      "status": "PASS"
+    },
+    {
+      "name": "Login salah menampilkan pesan",
+      "status": "PASS"
+    },
+    {
+      "name": "Login benar dan dashboard",
+      "status": "PASS"
+    },
+    {
+      "name": "Grafik Chart.js aktif",
+      "status": "PASS"
+    },
+    {
+      "name": "Font Poppins dan ikon Bootstrap tersedia offline",
+      "status": "PASS"
+    },
+    {
+      "name": "Tambah kategori",
+      "status": "PASS"
+    },
+    {
+      "name": "Modal edit kategori",
+      "status": "PASS"
+    },
+    {
+      "name": "Select2 mencari kategori dan format rupiah",
+      "status": "PASS"
+    },
+    {
+      "name": "Simpan transaksi uang masuk",
+      "status": "PASS"
+    },
+    {
+      "name": "Kategori terkait transaksi ditolak saat dihapus",
+      "status": "PASS"
+    },
+    {
+      "name": "Simpan uang keluar dan saldo terkini",
+      "status": "PASS"
+    },
+    {
+      "name": "DataTables pencarian, pagination, dan sorting",
+      "status": "PASS"
+    },
+    {
+      "name": "Filter tipe, kategori, tanggal dan reset",
+      "status": "PASS"
+    },
+    {
+      "name": "Edit transaksi dan simpan nominal baru",
+      "status": "PASS"
+    },
+    {
+      "name": "Navigasi mobile dan tampilan dashboard",
+      "status": "PASS"
+    },
+    {
+      "name": "Batal hapus transaksi mempertahankan data",
+      "status": "PASS"
+    },
+    {
+      "name": "Hapus transaksi dan kategori setelah kosong",
+      "status": "PASS"
+    },
+    {
+      "name": "Update profil",
+      "status": "PASS"
+    },
+    {
+      "name": "Font Figtree dan halaman konfirmasi password tersedia offline",
+      "status": "PASS"
+    },
+    {
+      "name": "Ubah password dari profil",
+      "status": "PASS"
+    },
+    {
+      "name": "Logout dan login memakai password baru",
+      "status": "PASS"
+    },
+    {
+      "name": "Modal hapus akun dan logout otomatis",
+      "status": "PASS"
+    },
+    {
+      "name": "Tidak ada koneksi internet atau kegagalan aset dan JavaScript",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "localAssetFailures": []
+}

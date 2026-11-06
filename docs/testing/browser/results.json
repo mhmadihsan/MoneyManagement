@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-06T12:21:44.070Z",
+  "database": "/private/tmp/managementMoney-qa-P4jwja/database.sqlite",
+  "browser": "Google Chrome headless",
+  "results": [
+    {
+      "name": "Beranda dan tautan login",
+      "status": "PASS"
+    },
+    {
+      "name": "Login salah menampilkan pesan",
+      "status": "PASS"
+    },
+    {
+      "name": "Login benar dan dashboard",
+      "status": "PASS"
+    },
+    {
+      "name": "Grafik Chart.js aktif",
+      "status": "PASS"
+    },
+    {
+      "name": "Tambah kategori",
+      "status": "PASS"
+    },
+    {
+      "name": "Modal edit kategori",
+      "status": "PASS"
+    },
+    {
+      "name": "Select2 mencari kategori dan format rupiah",
+      "status": "PASS"
+    },
+    {
+      "name": "Simpan transaksi uang masuk",
+      "status": "PASS"
+    },
+    {
+      "name": "Kategori terkait transaksi ditolak saat dihapus",
+      "status": "PASS"
+    },
+    {
+      "name": "Simpan uang keluar dan saldo terkini",
+      "status": "PASS"
+    },
+    {
+      "name": "DataTables pencarian, pagination, dan sorting",
+      "status": "PASS"
+    },
+    {
+      "name": "Filter tipe, kategori, tanggal dan reset",
+      "status": "PASS"
+    },
+    {
+      "name": "Edit transaksi dan simpan nominal baru",
+      "status": "PASS"
+    },
+    {
+      "name": "Audit nominal pecahan rupiah mempertahankan nilai",
+      "status": "FAIL",
+      "message": "Expected values to be strictly equal:\n+ actual - expected\n\n+ '12345'\n- '123.45'\n      ^"
+    },
+    {
+      "name": "Navigasi mobile dan tampilan dashboard",
+      "status": "PASS"
+    },
+    {
+      "name": "Batal hapus transaksi mempertahankan data",
+      "status": "PASS"
+    },
+    {
+      "name": "Hapus transaksi dan kategori setelah kosong",
+      "status": "PASS"
+    },
+    {
+      "name": "Update profil",
+      "status": "PASS"
+    },
+    {
+      "name": "Ubah password dari profil",
+      "status": "PASS"
+    },
+    {
+      "name": "Logout dan login memakai password baru",
+      "status": "PASS"
+    },
+    {
+      "name": "Modal hapus akun dan logout otomatis",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "networkFailures": [
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "consoleErrors": [
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi?start_date=2026-01-01&end_date=2026-12-31&tipe=keluar&kategori_id=2",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi?start_date=2026-01-01&end_date=2026-12-31&tipe=keluar&kategori_id=2",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Access to XMLHttpRequest at 'http://cdn.datatables.net/plug-ins/1.13.7/i18n/id.json' from origin 'http://127.0.0.1:18084' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "url": "http://127.0.0.1:18084/transaksi",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    }
+  ]
+}

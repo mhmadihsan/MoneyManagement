@@ -1,0 +1,805 @@
+{
+  "total": 114,
+  "passed": 95,
+  "failed": 19,
+  "cases": [
+    {
+      "class": "Tests\\Unit\\ExampleTest",
+      "name": "test_that_true_is_true",
+      "status": "PASS",
+      "seconds": "0.000337",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\AuthenticationTest",
+      "name": "test_login_screen_can_be_rendered",
+      "status": "PASS",
+      "seconds": "0.157485",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\AuthenticationTest",
+      "name": "test_users_can_authenticate_using_the_login_screen",
+      "status": "PASS",
+      "seconds": "0.029188",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\AuthenticationTest",
+      "name": "test_users_can_not_authenticate_with_invalid_password",
+      "status": "PASS",
+      "seconds": "0.215371",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\AuthenticationTest",
+      "name": "test_users_can_logout",
+      "status": "PASS",
+      "seconds": "0.015024",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\EmailVerificationTest",
+      "name": "test_email_verification_screen_can_be_rendered",
+      "status": "PASS",
+      "seconds": "0.019700",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\EmailVerificationTest",
+      "name": "test_email_can_be_verified",
+      "status": "PASS",
+      "seconds": "0.012568",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\EmailVerificationTest",
+      "name": "test_email_is_not_verified_with_invalid_hash",
+      "status": "PASS",
+      "seconds": "0.011947",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordConfirmationTest",
+      "name": "test_confirm_password_screen_can_be_rendered",
+      "status": "PASS",
+      "seconds": "0.011335",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordConfirmationTest",
+      "name": "test_password_can_be_confirmed",
+      "status": "PASS",
+      "seconds": "0.008010",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordConfirmationTest",
+      "name": "test_password_is_not_confirmed_with_invalid_password",
+      "status": "PASS",
+      "seconds": "0.210609",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordResetTest",
+      "name": "test_reset_password_link_screen_can_be_rendered",
+      "status": "FAIL",
+      "seconds": "0.010249",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordResetTest",
+      "name": "test_reset_password_link_can_be_requested",
+      "status": "FAIL",
+      "seconds": "0.012178",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordResetTest",
+      "name": "test_reset_password_screen_can_be_rendered",
+      "status": "FAIL",
+      "seconds": "0.006925",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordResetTest",
+      "name": "test_password_can_be_reset_with_valid_token",
+      "status": "FAIL",
+      "seconds": "0.006172",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordUpdateTest",
+      "name": "test_password_can_be_updated",
+      "status": "PASS",
+      "seconds": "0.014343",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\PasswordUpdateTest",
+      "name": "test_correct_password_must_be_provided_to_update_password",
+      "status": "PASS",
+      "seconds": "0.008269",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\RegistrationTest",
+      "name": "test_registration_screen_can_be_rendered",
+      "status": "FAIL",
+      "seconds": "0.006480",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\Auth\\RegistrationTest",
+      "name": "test_new_users_can_register",
+      "status": "FAIL",
+      "seconds": "0.007086",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\ExampleTest",
+      "name": "test_the_application_returns_a_successful_response",
+      "status": "PASS",
+      "seconds": "0.008046",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_registered_resource_pages_do_not_return_server_error with data set #0",
+      "status": "FAIL",
+      "seconds": "0.137024",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_registered_resource_pages_do_not_return_server_error with data set #1",
+      "status": "FAIL",
+      "seconds": "0.086280",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_registered_resource_pages_do_not_return_server_error with data set #2",
+      "status": "FAIL",
+      "seconds": "0.083630",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_registered_resource_pages_do_not_return_server_error with data set #3",
+      "status": "FAIL",
+      "seconds": "0.086022",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_unverified_account_is_directed_to_verification_from_dashboard",
+      "status": "FAIL",
+      "seconds": "0.006774",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_dashboard_login_time_stays_constant_when_reloaded",
+      "status": "FAIL",
+      "seconds": "0.008100",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_nominal_outside_decimal_15_2_is_rejected with data set #0",
+      "status": "FAIL",
+      "seconds": "0.007288",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_nominal_outside_decimal_15_2_is_rejected with data set #1",
+      "status": "FAIL",
+      "seconds": "0.006465",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_transaction_forms_display_server_validation_errors with data set #0",
+      "status": "FAIL",
+      "seconds": "0.008182",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_transaction_forms_display_server_validation_errors with data set #1",
+      "status": "FAIL",
+      "seconds": "0.008562",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_report_rejects_invalid_filters with data set #0",
+      "status": "FAIL",
+      "seconds": "0.009096",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_report_rejects_invalid_filters with data set #1",
+      "status": "FAIL",
+      "seconds": "0.006954",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FeatureAuditTest",
+      "name": "test_report_rejects_invalid_filters with data set #2",
+      "status": "FAIL",
+      "seconds": "0.006343",
+      "message": ""
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #0",
+      "status": "PASS",
+      "seconds": "0.008502",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #1",
+      "status": "PASS",
+      "seconds": "0.005222",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #2",
+      "status": "PASS",
+      "seconds": "0.005150",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #3",
+      "status": "PASS",
+      "seconds": "0.004905",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #4",
+      "status": "PASS",
+      "seconds": "0.004862",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #5",
+      "status": "PASS",
+      "seconds": "0.004921",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #6",
+      "status": "PASS",
+      "seconds": "0.004694",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #7",
+      "status": "PASS",
+      "seconds": "0.004652",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #8",
+      "status": "PASS",
+      "seconds": "0.004789",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #9",
+      "status": "PASS",
+      "seconds": "0.004699",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #10",
+      "status": "PASS",
+      "seconds": "0.004725",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #11",
+      "status": "PASS",
+      "seconds": "0.004657",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #12",
+      "status": "PASS",
+      "seconds": "0.004669",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #13",
+      "status": "PASS",
+      "seconds": "0.004652",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #14",
+      "status": "PASS",
+      "seconds": "0.005011",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #15",
+      "status": "PASS",
+      "seconds": "0.005073",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #16",
+      "status": "PASS",
+      "seconds": "0.004797",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #17",
+      "status": "PASS",
+      "seconds": "0.005148",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #18",
+      "status": "PASS",
+      "seconds": "0.004695",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #19",
+      "status": "PASS",
+      "seconds": "0.006602",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #20",
+      "status": "PASS",
+      "seconds": "0.004887",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #21",
+      "status": "PASS",
+      "seconds": "0.004787",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #22",
+      "status": "PASS",
+      "seconds": "0.005462",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #23",
+      "status": "PASS",
+      "seconds": "0.005118",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #24",
+      "status": "PASS",
+      "seconds": "0.004869",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #25",
+      "status": "PASS",
+      "seconds": "0.005066",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_guest_is_redirected_to_login with data set #26",
+      "status": "PASS",
+      "seconds": "0.004748",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_authenticated_pages_render_with_empty_finance_data with data set #0",
+      "status": "PASS",
+      "seconds": "0.006011",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_authenticated_pages_render_with_empty_finance_data with data set #1",
+      "status": "PASS",
+      "seconds": "0.005897",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_authenticated_pages_render_with_empty_finance_data with data set #2",
+      "status": "PASS",
+      "seconds": "0.006315",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_authenticated_pages_render_with_empty_finance_data with data set #3",
+      "status": "PASS",
+      "seconds": "0.005955",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_authenticated_pages_render_with_empty_finance_data with data set #4",
+      "status": "PASS",
+      "seconds": "0.011574",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_authenticated_pages_render_with_empty_finance_data with data set #5",
+      "status": "PASS",
+      "seconds": "0.006400",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_dashboard_totals_balance_current_year_count_and_chart_data",
+      "status": "PASS",
+      "seconds": "0.008865",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_category_create_rename_delete_and_success_messages",
+      "status": "PASS",
+      "seconds": "0.009676",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_category_name_is_validated_on_create_and_update with data set #0",
+      "status": "PASS",
+      "seconds": "0.007949",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_category_name_is_validated_on_create_and_update with data set #1",
+      "status": "PASS",
+      "seconds": "0.006822",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_category_name_is_validated_on_create_and_update with data set #2",
+      "status": "PASS",
+      "seconds": "0.007190",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_category_name_is_validated_on_create_and_update with data set #3",
+      "status": "PASS",
+      "seconds": "0.006878",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_category_maximum_length_is_accepted",
+      "status": "PASS",
+      "seconds": "0.005695",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_create_edit_update_and_delete with data set #0",
+      "status": "PASS",
+      "seconds": "0.013508",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_create_edit_update_and_delete with data set #1",
+      "status": "PASS",
+      "seconds": "0.011125",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #0",
+      "status": "PASS",
+      "seconds": "0.007463",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #1",
+      "status": "PASS",
+      "seconds": "0.007158",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #2",
+      "status": "PASS",
+      "seconds": "0.007124",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #3",
+      "status": "PASS",
+      "seconds": "0.007903",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #4",
+      "status": "PASS",
+      "seconds": "0.007807",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #5",
+      "status": "PASS",
+      "seconds": "0.007378",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #6",
+      "status": "PASS",
+      "seconds": "0.007304",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #7",
+      "status": "PASS",
+      "seconds": "0.007640",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #8",
+      "status": "PASS",
+      "seconds": "0.007970",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_transaction_validation_preserves_data with data set #9",
+      "status": "PASS",
+      "seconds": "0.007368",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_optional_description_and_zero_nominal_are_accepted_by_current_rules",
+      "status": "PASS",
+      "seconds": "0.006254",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #0",
+      "status": "PASS",
+      "seconds": "0.007837",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #1",
+      "status": "PASS",
+      "seconds": "0.007878",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #2",
+      "status": "PASS",
+      "seconds": "0.007161",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #3",
+      "status": "PASS",
+      "seconds": "0.007075",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #4",
+      "status": "PASS",
+      "seconds": "0.006894",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #5",
+      "status": "PASS",
+      "seconds": "0.006833",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #6",
+      "status": "PASS",
+      "seconds": "0.006844",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #7",
+      "status": "PASS",
+      "seconds": "0.009324",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_report_filters_order_and_filtered_totals with data set #8",
+      "status": "PASS",
+      "seconds": "0.007281",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_output_escapes_category_and_description_html",
+      "status": "PASS",
+      "seconds": "0.007736",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_missing_resources_return_404 with data set #0",
+      "status": "PASS",
+      "seconds": "0.006646",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_missing_resources_return_404 with data set #1",
+      "status": "PASS",
+      "seconds": "0.006234",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_missing_resources_return_404 with data set #2",
+      "status": "PASS",
+      "seconds": "0.005878",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_missing_resources_return_404 with data set #3",
+      "status": "PASS",
+      "seconds": "0.006201",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_missing_resources_return_404 with data set #4",
+      "status": "PASS",
+      "seconds": "0.005856",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_category_with_transactions_cannot_be_deleted_and_displays_error",
+      "status": "PASS",
+      "seconds": "0.008030",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_category_can_be_deleted_after_its_last_transaction_is_deleted",
+      "status": "PASS",
+      "seconds": "0.007213",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_finance_data_is_currently_shared_between_accounts",
+      "status": "PASS",
+      "seconds": "0.007663",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_login_throttles_after_five_failed_attempts",
+      "status": "PASS",
+      "seconds": "1.054625",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_remember_me_issues_cookie",
+      "status": "PASS",
+      "seconds": "0.019580",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_profile_rejects_duplicate_and_invalid_email",
+      "status": "PASS",
+      "seconds": "0.017088",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_password_confirmation_mismatch_is_rejected",
+      "status": "PASS",
+      "seconds": "0.011691",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\FinanceFeaturesTest",
+      "name": "test_verification_notification_can_be_sent_and_is_throttled",
+      "status": "PASS",
+      "seconds": "0.024230",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\ProfileTest",
+      "name": "test_profile_page_is_displayed",
+      "status": "PASS",
+      "seconds": "0.030645",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\ProfileTest",
+      "name": "test_profile_information_can_be_updated",
+      "status": "PASS",
+      "seconds": "0.006540",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\ProfileTest",
+      "name": "test_email_verification_status_is_unchanged_when_the_email_address_is_unchanged",
+      "status": "PASS",
+      "seconds": "0.005959",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\ProfileTest",
+      "name": "test_user_can_delete_their_account",
+      "status": "PASS",
+      "seconds": "0.006792",
+      "message": null
+    },
+    {
+      "class": "Tests\\Feature\\ProfileTest",
+      "name": "test_correct_password_must_be_provided_to_delete_account",
+      "status": "PASS",
+      "seconds": "0.006936",
+      "message": null
+    }
+  ]
+}

@@ -41,6 +41,10 @@ class KategoriController extends Controller
      */
     public function destroy(Kategori $kategori)
     {
+        if ($kategori->transaksiKeuangan()->exists()) {
+            return redirect()->route('kategori.index')->with('error', 'Kategori tidak dapat dihapus karena masih digunakan oleh transaksi.');
+        }
+
         $kategori->delete();
         return redirect()->route('kategori.index')->with('success', 'Kategori berhasil dihapus');
     }

@@ -1,0 +1,129 @@
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true is true
+
+   PASS  Tests\Feature\Auth\AuthenticationTest
+  ✓ login screen can be rendered                                         0.14s  
+  ✓ users can authenticate using the login screen                        0.04s  
+  ✓ users can not authenticate with invalid password                     0.22s  
+  ✓ users can logout                                                     0.02s  
+
+   PASS  Tests\Feature\Auth\EmailVerificationTest
+  ✓ email verification screen can be rendered                            0.02s  
+  ✓ email can be verified                                                0.01s  
+  ✓ email is not verified with invalid hash                              0.01s  
+
+   PASS  Tests\Feature\Auth\PasswordConfirmationTest
+  ✓ confirm password screen can be rendered                              0.01s  
+  ✓ password can be confirmed                                            0.01s  
+  ✓ password is not confirmed with invalid password                      0.22s  
+
+   PASS  Tests\Feature\Auth\PasswordUpdateTest
+  ✓ password can be updated                                              0.03s  
+  ✓ correct password must be provided to update password                 0.02s  
+
+   PASS  Tests\Feature\ExampleTest
+  ✓ the application returns a successful response                        0.01s  
+
+   PASS  Tests\Feature\FinanceFeaturesTest
+  ✓ guest is redirected to login with data set #0                        0.01s  
+  ✓ guest is redirected to login with data set #1                        0.01s  
+  ✓ guest is redirected to login with data set #2                        0.01s  
+  ✓ guest is redirected to login with data set #3                        0.01s  
+  ✓ guest is redirected to login with data set #4                        0.01s  
+  ✓ guest is redirected to login with data set #5                        0.01s  
+  ✓ guest is redirected to login with data set #6
+  ✓ guest is redirected to login with data set #7
+  ✓ guest is redirected to login with data set #8
+  ✓ guest is redirected to login with data set #9                        0.01s  
+  ✓ guest is redirected to login with data set #10                       0.01s  
+  ✓ guest is redirected to login with data set #11                       0.01s  
+  ✓ guest is redirected to login with data set #12
+  ✓ guest is redirected to login with data set #13
+  ✓ guest is redirected to login with data set #14                       0.01s  
+  ✓ guest is redirected to login with data set #15
+  ✓ guest is redirected to login with data set #16
+  ✓ guest is redirected to login with data set #17                       0.01s  
+  ✓ guest is redirected to login with data set #18
+  ✓ guest is redirected to login with data set #19
+  ✓ guest is redirected to login with data set #20
+  ✓ guest is redirected to login with data set #21                       0.01s  
+  ✓ guest is redirected to login with data set #22
+  ✓ guest is redirected to login with data set #23
+  ✓ guest is redirected to login with data set #24
+  ✓ guest is redirected to login with data set #25                       0.01s  
+  ✓ guest is redirected to login with data set #26
+  ✓ authenticated pages render with empty finance data with data set #0  0.01s  
+  ✓ authenticated pages render with empty finance data with data set #1  0.01s  
+  ✓ authenticated pages render with empty finance data with data set #2  0.01s  
+  ✓ authenticated pages render with empty finance data with data set #3  0.01s  
+  ✓ authenticated pages render with empty finance data with data set #4  0.01s  
+  ✓ authenticated pages render with empty finance data with data set #5  0.01s  
+  ✓ dashboard totals balance current year count and chart data           0.01s  
+  ✓ category create rename delete and success messages                   0.01s  
+  ✓ category name is validated on create and update with data set #0     0.01s  
+  ✓ category name is validated on create and update with data set #1     0.01s  
+  ✓ category name is validated on create and update with data set #2     0.01s  
+  ✓ category name is validated on create and update with data set #3     0.01s  
+  ✓ category maximum length is accepted                                  0.01s  
+  ✓ transaction create edit update and delete with data set #0           0.01s  
+  ✓ transaction create edit update and delete with data set #1           0.01s  
+  ✓ transaction validation preserves data with data set #0               0.01s  
+  ✓ transaction validation preserves data with data set #1               0.01s  
+  ✓ transaction validation preserves data with data set #2               0.01s  
+  ✓ transaction validation preserves data with data set #3               0.01s  
+  ✓ transaction validation preserves data with data set #4               0.01s  
+  ✓ transaction validation preserves data with data set #5               0.01s  
+  ✓ transaction validation preserves data with data set #6               0.01s  
+  ✓ transaction validation preserves data with data set #7               0.01s  
+  ✓ transaction validation preserves data with data set #8               0.01s  
+  ✓ transaction validation preserves data with data set #9               0.01s  
+  ✓ optional description and zero nominal are accepted by current rules  0.01s  
+  ✓ report filters order and filtered totals with data set #0            0.01s  
+  ✓ report filters order and filtered totals with data set #1            0.01s  
+  ✓ report filters order and filtered totals with data set #2            0.01s  
+  ✓ report filters order and filtered totals with data set #3            0.01s  
+  ✓ report filters order and filtered totals with data set #4            0.01s  
+  ✓ report filters order and filtered totals with data set #5            0.01s  
+  ✓ report filters order and filtered totals with data set #6            0.01s  
+  ✓ report filters order and filtered totals with data set #7            0.01s  
+  ✓ report filters order and filtered totals with data set #8            0.01s  
+  ✓ output escapes category and description html                         0.01s  
+  ✓ missing resources return 404 with data set #0                        0.01s  
+  ✓ missing resources return 404 with data set #1                        0.01s  
+  ✓ missing resources return 404 with data set #2                        0.01s  
+  ✓ missing resources return 404 with data set #3                        0.01s  
+  ✓ missing resources return 404 with data set #4                        0.01s  
+  ✓ category with transactions cannot be deleted and displays error      0.01s  
+  ✓ category can be deleted after its last transaction is deleted        0.01s  
+  ✓ finance data is currently shared between accounts                    0.01s  
+  ✓ login throttles after five failed attempts                           1.06s  
+  ✓ remember me issues cookie                                            0.02s  
+  ✓ profile rejects duplicate and invalid email                          0.02s  
+  ✓ password confirmation mismatch is rejected                           0.01s  
+  ✓ verification notification can be sent and is throttled               0.03s  
+
+   PASS  Tests\Feature\OfflineAssetsTest
+  ✓ pages only reference existing local styles and scripts with data se… 0.02s  
+  ✓ pages only reference existing local styles and scripts with data se… 0.01s  
+  ✓ pages only reference existing local styles and scripts with data se… 0.01s  
+  ✓ pages only reference existing local styles and scripts with data se… 0.01s  
+  ✓ pages only reference existing local styles and scripts with data se… 0.01s  
+  ✓ pages only reference existing local styles and scripts with data se… 0.01s  
+  ✓ pages only reference existing local styles and scripts with data se… 0.01s  
+  ✓ pages only reference existing local styles and scripts with data se… 0.01s  
+  ✓ pages only reference existing local styles and scripts with data se… 0.01s  
+  ✓ templates do not load external resources                             0.01s  
+  ✓ vendor styles resolve fonts and images from local files
+  ✓ vendored assets match the recorded checksums                         0.02s  
+
+   PASS  Tests\Feature\ProfileTest
+  ✓ profile page is displayed                                            0.01s  
+  ✓ profile information can be updated                                   0.01s  
+  ✓ email verification status is unchanged when the email address is un… 0.01s  
+  ✓ user can delete their account                                        0.01s  
+  ✓ correct password must be provided to delete account                  0.01s  
+
+  Tests:    107 passed (649 assertions)
+  Duration: 2.66s
+

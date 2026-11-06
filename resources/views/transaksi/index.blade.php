@@ -1,6 +1,6 @@
 <x-bootstrap-layout>
     <!-- DataTables Bootstrap 5 CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="{{ asset('vendor/datatables/dataTables.bootstrap5.min.css') }}">
     
     <div class="card card-custom shadow-sm mb-4">
         <div class="card-header card-header-custom">
@@ -126,16 +126,16 @@
         </div>
     </div>
 
-    <!-- jQuery and DataTables JS CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <!-- jQuery and DataTables JS lokal -->
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('vendor/datatables/dataTables.bootstrap5.min.js') }}"></script>
 
     <script>
         $(document).ready(function() {
             $('#transaksiTable').DataTable({
                 "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.13.7/i18n/id.json"
+                    "url": "{{ asset('vendor/datatables/i18n/id.json') }}"
                 },
                 "order": [[0, "desc"]], // Sort by date descending by default
                 "pageLength": 10
