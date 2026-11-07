@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Management Keuangan Klik Utama Mubarak</title>
+    <title>Management Keuangan Klinik Mubarak</title>
 
     <!-- Bootstrap 5 CSS lokal -->
     <link href="{{ asset('vendor/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
@@ -64,7 +64,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100 py-3">
         <div class="container">
             <a class="navbar-brand fw-bold text-blue" href="#">
-                <i class="bi bi-wallet2 me-2"></i>Management Keuangan Klik Utama Mubarak
+                <i class="bi bi-wallet2 me-2"></i>Management Keuangan Klinik Mubarak
             </a>
             <div class="ms-auto">
                 @if (Route::has('login'))
@@ -83,7 +83,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h1 class="display-2 fw-bold text-blue mb-3">Management Keuangan Klik Utama Mubarak</h1>
+                    <h1 class="display-2 fw-bold text-blue mb-3">Management Keuangan Klinik Mubarak</h1>
                     <p class="lead text-secondary mb-5 fs-4">Kelola arus kas pribadi atau bisnis Anda dengan sistem yang rapi, transparan, dan mudah digunakan.</p>
                     
                     <div class="mb-5">
@@ -136,7 +136,7 @@
     <!-- Footer -->
     <footer class="py-4 bg-white border-top">
         <div class="container text-center">
-            <p class="text-muted small mb-0">&copy; {{ date('Y') }} Management Keuangan Klik Utama Mubarak - Built with Laravel & Bootstrap 5</p>
+            <p class="text-muted small mb-0">&copy; {{ date('Y') }} Management Keuangan Klinik Mubarak - Built with Laravel & Bootstrap 5</p>
         </div>
     </footer>
 

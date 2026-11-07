@@ -232,6 +232,6 @@ class TransaksiKeuanganController extends Controller
             $query->whereDate('tanggal', '<=', $request->end_date);
         }
 
-        return $query->orderBy('tanggal', 'desc');
+        return $query->orderByDesc('tanggal')->orderByDesc('created_at')->orderByDesc('id');
     }
 }

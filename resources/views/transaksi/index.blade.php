@@ -93,7 +93,12 @@
                                 };
                             @endphp
                             <tr>
-                                <td class="px-4 py-3 small">{{ $t->tanggal }}</td>
+                                <td class="px-4 py-3 small" data-order="{{ \Carbon\Carbon::parse($t->tanggal)->format('Y-m-d') }} {{ $t->created_at->format('H:i:s') }}">
+                                    {{ \Carbon\Carbon::parse($t->tanggal)->translatedFormat('d M Y') }}
+                                    <span class="d-block text-secondary" style="font-size: .75rem;">
+                                        <i class="bi bi-clock me-1"></i>{{ $t->created_at->format('H:i') }}
+                                    </span>
+                                </td>
                                 <td class="px-4 py-3">
                                     <span class="badge rounded-pill {{ $tipeClass }} px-3">
                                         {{ $t->tipe === 'piutang' ? 'Piutang' : ucfirst($t->tipe) }}

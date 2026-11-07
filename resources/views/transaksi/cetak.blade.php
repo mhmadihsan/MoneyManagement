@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cetak Laporan Transaksi - Management Keuangan Klik Utama Mubarak</title>
+    <title>Cetak Laporan Transaksi - Management Keuangan Klinik Mubarak</title>
 
     @php
         $periodeMulai = request('start_date');
@@ -273,7 +273,7 @@
     <div class="paper">
         <div class="report-head">
             <div>
-                <div class="brand">Management Keuangan Klik Utama Mubarak</div>
+                <div class="brand">Management Keuangan Klinik Mubarak</div>
                 <h1>Laporan Transaksi Keuangan</h1>
             </div>
             <div class="meta">
@@ -360,7 +360,7 @@
         </div>
 
         <div class="report-foot">
-            <span>Management Keuangan Klik Utama Mubarak</span>
+            <span>Management Keuangan Klinik Mubarak</span>
             <span>Dokumen dibuat otomatis oleh sistem</span>
         </div>
     </div>

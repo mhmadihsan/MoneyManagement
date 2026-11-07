@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Management Keuangan Klik Utama Mubarak'),
+    'name' => env('APP_NAME', 'Management Keuangan Klinik Mubarak'),
 
     /*
     |--------------------------------------------------------------------------

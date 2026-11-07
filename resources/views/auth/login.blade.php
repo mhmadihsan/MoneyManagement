@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Login - Management Keuangan Klik Utama Mubarak</title>
+    <title>Login - Management Keuangan Klinik Mubarak</title>
 
     <!-- Bootstrap 5 CSS lokal -->
     <link href="{{ asset('vendor/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
@@ -55,7 +55,7 @@
                     <div class="card card-login p-4 p-md-5">
                         <div class="text-center mb-4">
                             <a href="/" class="text-decoration-none text-blue h2 fw-bold">
-                                <i class="bi bi-wallet2 me-2"></i>Management Keuangan Klik Utama Mubarak
+                                <i class="bi bi-wallet2 me-2"></i>Management Keuangan Klinik Mubarak
                             </a>
                             <h4 class="fw-bold mt-3">Selamat Datang</h4>
                             <p class="text-secondary small">Silakan masuk ke akun Anda</p>
