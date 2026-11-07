@@ -22,6 +22,28 @@
                 @enderror
             </form>
 
+            <form action="{{ route('kategori.index') }}" method="GET" class="mb-4">
+                <div class="row g-2 align-items-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                            <input type="text" name="search" value="{{ $search }}" class="form-control" placeholder="Cari kategori...">
+                            <button type="submit" class="btn btn-primary fw-bold px-4">Cari</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        @if($search)
+                            <a href="{{ route('kategori.index') }}" class="btn btn-outline-secondary">
+                                <i class="bi bi-x-lg me-1"></i>Reset
+                            </a>
+                        @endif
+                        <span class="text-muted small ms-2">
+                            Menampilkan {{ $kategoris->firstItem() ?? 0 }}&ndash;{{ $kategoris->lastItem() ?? 0 }} dari {{ $kategoris->total() }} data
+                        </span>
+                    </div>
+                </div>
+            </form>
+
             <div class="table-responsive">
                 <table class="table table-hover align-middle">
                     <thead class="table-primary text-white">
@@ -34,7 +56,7 @@
                     <tbody>
                         @forelse($kategoris as $k)
                             <tr>
-                                <td class="px-4 py-3">{{ $loop->iteration }}</td>
+                                <td class="px-4 py-3">{{ $kategoris->firstItem() + $loop->index }}</td>
                                 <td class="px-4 py-3 fw-medium">{{ $k->nama }}</td>
                                 <td class="px-4 py-3 text-center">
                                     <div class="d-flex justify-content-center gap-2">
@@ -82,13 +104,24 @@
                         @empty
                             <tr>
                                 <td colspan="3" class="text-center py-5 text-muted">
-                                    <i class="bi bi-info-circle me-2"></i>Belum ada data kategori.
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    @if($search)
+                                        Tidak ada kategori dengan nama "{{ $search }}".
+                                    @else
+                                        Belum ada data kategori.
+                                    @endif
                                 </td>
                             </tr>
                         @endforelse
                     </tbody>
                 </table>
             </div>
+
+            @if($kategoris->hasPages())
+                <div class="d-flex justify-content-center mt-4">
+                    {{ $kategoris->links('pagination::bootstrap-5') }}
+                </div>
+            @endif
         </div>
     </div>
 </x-bootstrap-layout>
