@@ -6,6 +6,16 @@
                     <h4 class="fw-bold text-blue mb-0"><i class="bi bi-pencil-square me-2"></i>Edit Transaksi</h4>
                 </div>
                 <div class="card-body p-4">
+                    @if($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="mb-0 small">
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <form action="{{ route('transaksi.update', $transaksi) }}" method="POST">
                         @csrf
                         @method('PUT')
@@ -16,6 +26,7 @@
                                 <select id="tipe" name="tipe" class="form-select form-select-lg border-primary-subtle" required>
                                     <option value="masuk" {{ $transaksi->tipe == 'masuk' ? 'selected' : '' }}>Uang Masuk</option>
                                     <option value="keluar" {{ $transaksi->tipe == 'keluar' ? 'selected' : '' }}>Uang Keluar</option>
+                                    <option value="piutang" {{ $transaksi->tipe == 'piutang' ? 'selected' : '' }}>Piutang (Uang yang Harus Dibayar)</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
@@ -39,6 +50,42 @@
                                         <option value="{{ $k->id }}" {{ $transaksi->kategori_id == $k->id ? 'selected' : '' }}>{{ $k->nama }}</option>
                                     @endforeach
                                 </select>
+                            </div>
+                        </div>
+
+                        @if($transaksi->tipe === 'piutang' && $transaksi->total_dibayar > 0)
+                            <div class="alert alert-info py-2 px-3 small">
+                                Piutang ini sudah dibayar <strong>Rp {{ number_format($transaksi->total_dibayar, 0, ',', '.') }}</strong>
+                                dengan sisa <strong>Rp {{ number_format($transaksi->sisa_piutang, 0, ',', '.') }}</strong>.
+                            </div>
+                        @endif
+
+                        <div id="piutangSection" class="mb-4 d-none">
+                            <div class="p-3 bg-light rounded-3 border">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="is_bayar_piutang" name="is_bayar_piutang" value="1" {{ $transaksi->is_bayar_piutang ? 'checked' : '' }}>
+                                    <label class="form-check-label fw-semibold" for="is_bayar_piutang">Bayar / Kurangi Piutang</label>
+                                </div>
+                                <p class="text-muted small mb-0 mt-1">Aktifkan jika uang keluar ini dipakai untuk membayar piutang.</p>
+
+                                <div id="piutangSelectWrap" class="mt-3 d-none">
+                                    <label for="piutang_id" class="form-label small fw-bold text-secondary">Pilih Piutang</label>
+                                    @if($piutangs->isEmpty())
+                                        <div class="alert alert-warning py-2 px-3 small mb-0">
+                                            Tidak ada piutang yang belum lunas. Buat transaksi dengan tipe Piutang terlebih dahulu.
+                                        </div>
+                                    @else
+                                        <select name="piutang_id" id="piutang_id" class="form-select border-primary-subtle">
+                                            <option value="">Pilih piutang yang akan dibayar</option>
+                                            @foreach($piutangs as $p)
+                                                <option value="{{ $p->id }}" data-sisa="{{ $p->sisa_piutang }}" {{ (string) $transaksi->piutang_id === (string) $p->id ? 'selected' : '' }}>
+                                                    #{{ $p->id }} - {{ $p->keterangan ?: $p->kategori->nama }} (Sisa: Rp {{ number_format($p->sisa_piutang, 0, ',', '.') }})
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        <div class="form-text">Nominal transaksi ini akan mengurangi sisa piutang yang dipilih.</div>
+                                    @endif
+                                </div>
                             </div>
                         </div>
 
@@ -73,6 +120,31 @@
                     this.value = '';
                 }
             });
+
+            const tipe = document.getElementById('tipe');
+            const section = document.getElementById('piutangSection');
+            const checkbox = document.getElementById('is_bayar_piutang');
+            const wrap = document.getElementById('piutangSelectWrap');
+            const select = document.getElementById('piutang_id');
+
+            function syncPiutang() {
+                const isKeluar = tipe.value === 'keluar';
+                section.classList.toggle('d-none', !isKeluar);
+
+                if (!isKeluar) {
+                    checkbox.checked = false;
+                }
+
+                wrap.classList.toggle('d-none', !checkbox.checked);
+
+                if (select) {
+                    select.required = isKeluar && checkbox.checked;
+                }
+            }
+
+            tipe.addEventListener('change', syncPiutang);
+            checkbox.addEventListener('change', syncPiutang);
+            syncPiutang();
         });
     </script>
 </x-bootstrap-layout>

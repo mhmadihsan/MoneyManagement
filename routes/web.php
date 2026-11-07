@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TransaksiKeuanganController;
 use Illuminate\Support\Facades\Route;
 
@@ -10,14 +10,13 @@ Route::get('/', function () {
 });
 
 use App\Models\TransaksiKeuangan;
-use Carbon\Carbon;
 
 Route::get('/dashboard', function () {
     $totalMasuk = TransaksiKeuangan::where('tipe', 'masuk')->sum('nominal');
     $totalKeluar = TransaksiKeuangan::where('tipe', 'keluar')->sum('nominal');
-    
+
     $transaksiTahunIni = TransaksiKeuangan::whereYear('tanggal', date('Y'))->count();
-    
+
     // Simulasikan waktu login (menggunakan waktu sekarang)
     $waktuLogin = now()->format('d M Y, H:i');
 
@@ -30,6 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::resource('kategori', KategoriController::class);
+    Route::get('transaksi/cetak', [TransaksiKeuanganController::class, 'cetak'])->name('transaksi.cetak');
     Route::resource('transaksi', TransaksiKeuanganController::class);
 });
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Management Keuangan</title>
+    <title>Management Keuangan Klik Utama Mubarak</title>
 
     <!-- Bootstrap 5 CSS lokal -->
     <link href="{{ asset('vendor/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
@@ -47,7 +47,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom py-3 mb-4">
         <div class="container">
             <a class="navbar-brand fw-bold" href="{{ url('/dashboard') }}">
-                <i class="bi bi-wallet2 me-2"></i>Management Keuangan
+                <i class="bi bi-wallet2 me-2"></i>Management Keuangan Klik Utama Mubarak
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -96,7 +96,7 @@
     </main>
 
     <footer class="py-4 mt-5 text-center text-muted">
-        <p>&copy; {{ date('Y') }} Management Keuangan - Built with Bootstrap 5</p>
+        <p>&copy; {{ date('Y') }} Management Keuangan Klik Utama Mubarak - Built with Bootstrap 5</p>
     </footer>
 
     <!-- Bootstrap 5 JS Bundle lokal -->
